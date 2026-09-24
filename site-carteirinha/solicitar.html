@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar Carteirinha | Identifica+</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <div class="faixa-superior"></div>
+
+        <div class="container cabecalho-conteudo">
+
+            <a href="index.html" class="marca marca-link">
+
+                <div class="marca-icone">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div>
+                    <h1>Identifica<span>+</span></h1>
+                    <p>Identificação digital</p>
+                </div>
+
+            </a>
+
+            <a href="index.html" class="voltar-inicio">
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main class="pagina-solicitacao">
+
+        <div class="container formulario-container">
+
+            <!-- TÍTULO -->
+            <section class="solicitacao-topo">
+
+                <span class="etiqueta">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                    Nova solicitação
+                </span>
+
+                <h2>Solicitar carteirinha</h2>
+
+                <p>
+                    Preencha seus dados com atenção. Os campos marcados
+                    com * são obrigatórios.
+                </p>
+
+            </section>
+
+
+            <!-- ETAPAS -->
+            <div class="etapas">
+
+                <div class="etapa ativa">
+                    <span>1</span>
+                    <p>Dados pessoais</p>
+                </div>
+
+                <div class="linha-etapa"></div>
+
+                <div class="etapa">
+                    <span>2</span>
+                    <p>Endereço</p>
+                </div>
+
+                <div class="linha-etapa"></div>
+
+                <div class="etapa">
+                    <span>3</span>
+                    <p>Responsável</p>
+                </div>
+
+                <div class="linha-etapa"></div>
+
+                <div class="etapa">
+                    <span>4</span>
+                    <p>Documentos</p>
+                </div>
+
+                <div class="linha-etapa"></div>
+
+                <div class="etapa">
+                    <span>5</span>
+                    <p>Revisão</p>
+                </div>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+            <form id="formSolicitacao" class="formulario-solicitacao">
+
+                <!-- DADOS PESSOAIS -->
+                <section class="bloco-formulario">
+
+                    <div class="bloco-titulo">
+
+                        <div class="bloco-icone">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <h3>Dados pessoais</h3>
+                            <p>Informe os dados da pessoa que receberá a carteirinha.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grade-formulario">
+
+                        <div class="campo campo-grande">
+                            <label for="nomeCompleto">
+                                Nome completo *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nomeCompleto"
+                                name="nomeCompleto"
+                                placeholder="Digite o nome completo"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="dataNascimento">
+                                Data de nascimento *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dataNascimento"
+                                name="dataNascimento"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="cpf">
+                                CPF *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cpf"
+                                name="cpf"
+                                placeholder="000.000.000-00"
+                                maxlength="14"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="telefone">
+                                Telefone *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                placeholder="(00) 00000-0000"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="exemplo@email.com"
+                            >
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ENDEREÇO -->
+                <section class="bloco-formulario">
+
+                    <div class="bloco-titulo">
+
+                        <div class="bloco-icone">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Informe o endereço atual.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grade-formulario">
+
+                        <div class="campo">
+                            <label for="cep">CEP *</label>
+
+                            <input
+                                type="text"
+                                id="cep"
+                                name="cep"
+                                placeholder="00000-000"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo campo-grande">
+                            <label for="logradouro">
+                                Logradouro *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="logradouro"
+                                name="logradouro"
+                                placeholder="Rua, avenida..."
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="numero">Número *</label>
+
+                            <input
+                                type="text"
+                                id="numero"
+                                name="numero"
+                                placeholder="Nº"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="complemento">
+                                Complemento
+                            </label>
+
+                            <input
+                                type="text"
+                                id="complemento"
+                                name="complemento"
+                                placeholder="Casa, apartamento..."
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="bairro">Bairro *</label>
+
+                            <input
+                                type="text"
+                                id="bairro"
+                                name="bairro"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="cidade">Cidade *</label>
+
+                            <input
+                                type="text"
+                                id="cidade"
+                                name="cidade"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="estado">Estado *</label>
+
+                            <select id="estado" name="estado" required>
+                                <option value="">Selecione</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RESPONSÁVEL -->
+                <section class="bloco-formulario">
+
+                    <div class="bloco-titulo">
+
+                        <div class="bloco-icone">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+
+                        <div>
+                            <h3>Responsável e filiação</h3>
+                            <p>
+                                Preencha os dados necessários, principalmente
+                                quando o beneficiário for menor de idade.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grade-formulario">
+
+                        <div class="campo">
+                            <label for="nomePai">
+                                Nome do pai
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nomePai"
+                                name="nomePai"
+                                placeholder="Nome completo"
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="nomeMae">
+                                Nome da mãe
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nomeMae"
+                                name="nomeMae"
+                                placeholder="Nome completo"
+                            >
+                        </div>
+
+
+                        <div class="campo campo-grande">
+                            <label for="nomeResponsavel">
+                                Nome do responsável
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nomeResponsavel"
+                                name="nomeResponsavel"
+                                placeholder="Nome completo do responsável"
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="telefoneResponsavel">
+                                Telefone do responsável
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefoneResponsavel"
+                                name="telefoneResponsavel"
+                                placeholder="(00) 00000-0000"
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="emailResponsavel">
+                                E-mail do responsável
+                            </label>
+
+                            <input
+                                type="email"
+                                id="emailResponsavel"
+                                name="emailResponsavel"
+                                placeholder="exemplo@email.com"
+                            >
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- DOCUMENTOS -->
+                <section class="bloco-formulario">
+
+                    <div class="bloco-titulo">
+
+                        <div class="bloco-icone">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </div>
+
+                        <div>
+                            <h3>Foto e documentos</h3>
+                            <p>
+                                Envie os arquivos necessários para análise.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grade-uploads">
+
+                        <div class="campo-upload">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                            <h4>Foto para a carteirinha *</h4>
+
+                            <p>
+                                Envie uma foto nítida e atual.
+                            </p>
+
+                            <input
+                                type="file"
+                                id="foto"
+                                name="foto"
+                                accept="image/jpeg,image/png"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo-upload">
+
+                            <i class="fa-solid fa-file-medical"></i>
+
+                            <h4>Documento comprobatório *</h4>
+
+                            <p>
+                                Arquivo utilizado para comprovação.
+                            </p>
+
+                            <input
+                                type="file"
+                                id="documento"
+                                name="documento"
+                                accept=".pdf,image/jpeg,image/png"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- CONFIRMAÇÃO -->
+                <section class="confirmacao-formulario">
+
+                    <label class="checkbox-confirmacao">
+
+                        <input
+                            type="checkbox"
+                            id="confirmacao"
+                            required
+                        >
+
+                        <span>
+                            Declaro que as informações fornecidas são verdadeiras
+                            e que os documentos enviados correspondem ao beneficiário.
+                        </span>
+
+                    </label>
+
+                </section>
+
+
+                <!-- BOTÕES -->
+                <div class="acoes-formulario">
+
+                    <a
+                        href="index.html"
+                        class="btn btn-cancelar"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                        Cancelar
+                    </a>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-principal"
+                    >
+                        Enviar solicitação
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

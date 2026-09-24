@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analisar Solicitação | Identifica+</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="admin-sidebar">
+
+            <div class="sidebar-marca">
+
+                <div class="sidebar-logo">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div>
+                    <h1>Identifica<span>+</span></h1>
+                    <p>Painel administrativo</p>
+                </div>
+
+            </div>
+
+            <div class="sidebar-divisor"></div>
+
+            <nav class="sidebar-menu">
+
+                <span class="sidebar-menu-titulo">
+                    GERENCIAMENTO
+                </span>
+
+                <a
+                    href="dashboard-admin.html"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Visão geral</span>
+                </a>
+
+                <a
+                    href="dashboard-admin.html#solicitacoes"
+                    class="sidebar-link ativo"
+                >
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Solicitações</span>
+
+                    <span class="sidebar-contador">
+                        1
+                    </span>
+                </a>
+
+                <span class="sidebar-menu-titulo segundo">
+                    SISTEMA
+                </span>
+
+                <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>Carteirinhas</span>
+                </a>
+
+                <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Histórico</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-rodape">
+
+                <div class="sidebar-seguranca">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <strong>Ambiente seguro</strong>
+                        <span>Área administrativa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+        <div class="admin-principal">
+
+            <!-- TOPBAR -->
+            <header class="admin-topbar">
+
+                <button
+                    type="button"
+                    class="btn-menu-mobile"
+                    id="btnMenuMobile"
+                    aria-label="Abrir menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="topbar-identificacao">
+                    <span>Painel administrativo</span>
+                    <strong>Análise de solicitação</strong>
+                </div>
+
+                <div class="topbar-direita">
+
+                    <div class="topbar-usuario">
+
+                        <div class="usuario-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="usuario-info">
+                            <strong>Administrador</strong>
+                            <span>Usuário autorizado</span>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="login-admin.html"
+                        class="topbar-sair"
+                        title="Sair"
+                    >
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <main class="analise-conteudo">
+
+                <!-- VOLTAR -->
+                <a
+                    href="dashboard-admin.html"
+                    class="voltar-dashboard"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Voltar para solicitações
+                </a>
+
+
+                <!-- CABEÇALHO DA SOLICITAÇÃO -->
+                <section class="analise-cabecalho">
+
+                    <div>
+
+                        <span class="dashboard-etiqueta">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                            ANÁLISE DA SOLICITAÇÃO
+                        </span>
+
+                        <h2>
+                            Solicitação #000001
+                        </h2>
+
+                        <p>
+                            Confira os dados e documentos enviados
+                            antes de tomar uma decisão.
+                        </p>
+
+                    </div>
+
+                    <span class="status-analise pendente">
+                        <i class="fa-regular fa-clock"></i>
+                        Pendente
+                    </span>
+
+                </section>
+
+
+                <!-- ALERTA -->
+                <div class="analise-alerta">
+
+                    <div class="analise-alerta-icone">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Solicitação aguardando análise
+                        </strong>
+
+                        <p>
+                            Confira cuidadosamente as informações
+                            e os documentos antes de aprovar ou
+                            rejeitar este pedido.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- GRID PRINCIPAL -->
+                <div class="analise-grid">
+
+                    <!-- COLUNA PRINCIPAL -->
+                    <div class="analise-coluna-principal">
+
+                        <!-- DADOS PESSOAIS -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo">
+
+                                <div class="analise-card-icone azul">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Dados pessoais</h3>
+                                    <p>
+                                        Informações do solicitante
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="dados-grid">
+
+                                <div class="dado-item grande">
+                                    <span>Nome completo</span>
+                                    <strong>Maria da Silva</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Data de nascimento</span>
+                                    <strong>10/05/1990</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>CPF</span>
+                                    <strong>000.000.000-00</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Telefone</span>
+                                    <strong>(00) 00000-0000</strong>
+                                </div>
+
+                                <div class="dado-item grande">
+                                    <span>E-mail</span>
+                                    <strong>exemplo@email.com</strong>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ENDEREÇO -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo">
+
+                                <div class="analise-card-icone verde">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Endereço</h3>
+                                    <p>
+                                        Endereço informado na solicitação
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="dados-grid">
+
+                                <div class="dado-item">
+                                    <span>CEP</span>
+                                    <strong>00000-000</strong>
+                                </div>
+
+                                <div class="dado-item grande">
+                                    <span>Logradouro</span>
+                                    <strong>Rua Exemplo</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Número</span>
+                                    <strong>123</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Complemento</span>
+                                    <strong>—</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Bairro</span>
+                                    <strong>Centro</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Cidade</span>
+                                    <strong>Exemplo</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Estado</span>
+                                    <strong>MA</strong>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- RESPONSÁVEL -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo">
+
+                                <div class="analise-card-icone roxo">
+                                    <i class="fa-solid fa-people-roof"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Responsável e filiação</h3>
+                                    <p>
+                                        Informações complementares
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="dados-grid">
+
+                                <div class="dado-item">
+                                    <span>Nome do pai</span>
+                                    <strong>João da Silva</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Nome da mãe</span>
+                                    <strong>Ana da Silva</strong>
+                                </div>
+
+                                <div class="dado-item grande">
+                                    <span>Responsável</span>
+                                    <strong>Não informado</strong>
+                                </div>
+
+                                <div class="dado-item">
+                                    <span>Telefone do responsável</span>
+                                    <strong>—</strong>
+                                </div>
+
+                                <div class="dado-item grande">
+                                    <span>E-mail do responsável</span>
+                                    <strong>—</strong>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- DOCUMENTOS -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo">
+
+                                <div class="analise-card-icone laranja">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Documentos enviados</h3>
+                                    <p>
+                                        Arquivos anexados pelo solicitante
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="documentos-lista">
+
+                                <article class="documento-item">
+
+                                    <div class="documento-tipo pdf">
+                                        <i class="fa-solid fa-file-pdf"></i>
+                                    </div>
+
+                                    <div class="documento-info">
+                                        <strong>
+                                            Documento comprobatório
+                                        </strong>
+
+                                        <span>
+                                            documento.pdf • PDF
+                                        </span>
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        class="btn-documento"
+                                    >
+                                        <i class="fa-regular fa-eye"></i>
+                                        Visualizar
+                                    </button>
+
+                                </article>
+
+
+                                <article class="documento-item">
+
+                                    <div class="documento-tipo imagem">
+                                        <i class="fa-solid fa-image"></i>
+                                    </div>
+
+                                    <div class="documento-info">
+                                        <strong>
+                                            Foto do beneficiário
+                                        </strong>
+
+                                        <span>
+                                            foto.jpg • Imagem
+                                        </span>
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        class="btn-documento"
+                                    >
+                                        <i class="fa-regular fa-eye"></i>
+                                        Visualizar
+                                    </button>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- COLUNA DIREITA -->
+                    <aside class="analise-coluna-lateral">
+
+                        <!-- FOTO -->
+                        <section class="analise-card foto-card">
+
+                            <div class="foto-beneficiario">
+
+                                <div class="foto-placeholder">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+
+                                <span class="foto-status">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    Foto enviada
+                                </span>
+
+                            </div>
+
+                            <h3>Maria da Silva</h3>
+
+                            <p>
+                                Solicitante da carteirinha
+                            </p>
+
+                            <div class="foto-protocolo">
+
+                                <span>Protocolo</span>
+
+                                <strong>#000001</strong>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- RESUMO -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo compacto">
+
+                                <div class="analise-card-icone azul">
+                                    <i class="fa-solid fa-list-check"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Resumo</h3>
+                                </div>
+
+                            </div>
+
+
+                            <div class="resumo-analise">
+
+                                <div>
+                                    <span>Solicitação</span>
+                                    <strong>#000001</strong>
+                                </div>
+
+                                <div>
+                                    <span>Data do envio</span>
+                                    <strong>24/09/2026</strong>
+                                </div>
+
+                                <div>
+                                    <span>Tipo</span>
+                                    <strong>Carteirinha Digital</strong>
+                                </div>
+
+                                <div>
+                                    <span>Status</span>
+
+                                    <strong class="texto-pendente">
+                                        Pendente
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- OBSERVAÇÃO -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo compacto">
+
+                                <div class="analise-card-icone amarelo">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Observação</h3>
+                                </div>
+
+                            </div>
+
+                            <label
+                                for="observacaoAdmin"
+                                class="label-observacao"
+                            >
+                                Observação do administrador
+                            </label>
+
+                            <textarea
+                                id="observacaoAdmin"
+                                class="observacao-admin"
+                                placeholder="Digite uma observação sobre esta solicitação..."
+                            ></textarea>
+
+                            <span class="observacao-ajuda">
+                                Essa informação poderá ser utilizada
+                                no histórico da análise.
+                            </span>
+
+                        </section>
+
+                    </aside>
+
+                </div>
+
+
+                <!-- AÇÕES -->
+                <section class="acoes-analise">
+
+                    <div class="acoes-esquerda">
+
+                        <button
+                            type="button"
+                            class="btn-analise btn-editar"
+                        >
+                            <i class="fa-solid fa-pen"></i>
+                            Editar dados
+                        </button>
+
+                    </div>
+
+
+                    <div class="acoes-direita">
+
+                        <button
+                            type="button"
+                            class="btn-analise btn-rejeitar"
+                        >
+                            <i class="fa-solid fa-xmark"></i>
+                            Rejeitar solicitação
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn-analise btn-validar"
+                        >
+                            <i class="fa-solid fa-circle-check"></i>
+                            Aprovar e continuar
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

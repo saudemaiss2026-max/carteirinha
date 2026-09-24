@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultar Solicitação | Identifica+</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <div class="faixa-superior"></div>
+
+        <div class="container cabecalho-conteudo">
+
+            <a href="index.html" class="marca marca-link">
+
+                <div class="marca-icone">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div>
+                    <h1>Identifica<span>+</span></h1>
+                    <p>Identificação digital</p>
+                </div>
+
+            </a>
+
+            <a href="index.html" class="voltar-inicio">
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main class="pagina-consulta">
+
+        <div class="container consulta-container">
+
+            <section class="consulta-card">
+
+                <div class="consulta-icone">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <span class="etiqueta">
+                    Acompanhe seu pedido
+                </span>
+
+                <h2>Consultar solicitação</h2>
+
+                <p class="consulta-descricao">
+                    Informe seu CPF e o número do protocolo para
+                    acompanhar o andamento da sua solicitação.
+                </p>
+
+
+                <form id="formConsulta">
+
+                    <div class="campo-consulta">
+
+                        <label for="cpfConsulta">
+                            CPF
+                        </label>
+
+                        <div class="input-com-icone">
+
+                            <i class="fa-solid fa-address-card"></i>
+
+                            <input
+                                type="text"
+                                id="cpfConsulta"
+                                name="cpfConsulta"
+                                placeholder="000.000.000-00"
+                                maxlength="14"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo-consulta">
+
+                        <label for="protocoloConsulta">
+                            Número do protocolo
+                        </label>
+
+                        <div class="input-com-icone">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                            <input
+                                type="text"
+                                id="protocoloConsulta"
+                                name="protocoloConsulta"
+                                placeholder="Digite o número do protocolo"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-principal botao-consultar"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Consultar solicitação
+                    </button>
+
+                </form>
+
+
+                <div class="consulta-aviso">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <p>
+                        O número do protocolo será informado após
+                        o envio da sua solicitação.
+                    </p>
+
+                </div>
+
+
+                <div class="consulta-nova">
+
+                    <p>Ainda não fez sua solicitação?</p>
+
+                    <a href="solicitar.html">
+                        Solicitar carteirinha
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

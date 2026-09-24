@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo | Identifica+</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-layout">
+
+        <!-- =====================================
+             MENU LATERAL
+        ====================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="sidebar-marca">
+
+                <div class="sidebar-logo">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div>
+                    <h1>Identifica<span>+</span></h1>
+                    <p>Painel administrativo</p>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-divisor"></div>
+
+
+            <nav class="sidebar-menu">
+
+                <span class="sidebar-menu-titulo">
+                    GERENCIAMENTO
+                </span>
+
+                <a
+                    href="dashboard-admin.html"
+                    class="sidebar-link ativo"
+                >
+                    <i class="fa-solid fa-table-columns"></i>
+
+                    <span>Visão geral</span>
+                </a>
+
+
+                <a
+                    href="#solicitacoes"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>Solicitações</span>
+
+                    <span class="sidebar-contador">
+                        1
+                    </span>
+                </a>
+
+
+                <span class="sidebar-menu-titulo segundo">
+                    SISTEMA
+                </span>
+
+
+                <a
+                    href="#"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-id-card"></i>
+
+                    <span>Carteirinhas</span>
+                </a>
+
+
+                <a
+                    href="#"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    <span>Histórico</span>
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-rodape">
+
+                <div class="sidebar-seguranca">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <strong>Ambiente seguro</strong>
+                        <span>Área administrativa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTEÚDO PRINCIPAL
+        ====================================== -->
+        <div class="admin-principal">
+
+            <!-- CABEÇALHO -->
+            <header class="admin-topbar">
+
+                <button
+                    type="button"
+                    class="btn-menu-mobile"
+                    id="btnMenuMobile"
+                    aria-label="Abrir menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+                <div class="topbar-identificacao">
+
+                    <span>
+                        Painel administrativo
+                    </span>
+
+                    <strong>
+                        Gestão de carteirinhas
+                    </strong>
+
+                </div>
+
+
+                <div class="topbar-direita">
+
+                    <button
+                        type="button"
+                        class="topbar-notificacao"
+                        aria-label="Notificações"
+                    >
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span></span>
+                    </button>
+
+
+                    <div class="topbar-usuario">
+
+                        <div class="usuario-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="usuario-info">
+                            <strong>Administrador</strong>
+                            <span>Usuário autorizado</span>
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="login-admin.html"
+                        class="topbar-sair"
+                        title="Sair"
+                    >
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- =====================================
+                 CONTEÚDO
+            ====================================== -->
+            <main class="dashboard-conteudo">
+
+                <!-- BOAS-VINDAS -->
+                <section class="dashboard-cabecalho">
+
+                    <div>
+
+                        <span class="dashboard-etiqueta">
+                            <i class="fa-solid fa-chart-line"></i>
+                            VISÃO GERAL
+                        </span>
+
+                        <h2>
+                            Solicitações de Carteirinhas
+                        </h2>
+
+                        <p>
+                            Acompanhe, analise e gerencie as
+                            solicitações recebidas pelo sistema.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-data">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <div>
+                            <span>Hoje</span>
+                            <strong>24 de setembro de 2026</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================
+                     CARDS
+                ====================================== -->
+                <section class="dashboard-cards">
+
+                    <!-- PENDENTES -->
+                    <article class="dashboard-card card-amarelo">
+
+                        <div class="card-topo">
+
+                            <div class="card-icone">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <span class="card-status">
+                                Aguardando
+                            </span>
+
+                        </div>
+
+                        <div class="card-conteudo">
+
+                            <span>
+                                Solicitações pendentes
+                            </span>
+
+                            <strong>1</strong>
+
+                        </div>
+
+                        <div class="card-rodape">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Aguardando análise
+                        </div>
+
+                    </article>
+
+
+                    <!-- EM ANÁLISE -->
+                    <article class="dashboard-card card-azul">
+
+                        <div class="card-topo">
+
+                            <div class="card-icone">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                            <span class="card-status">
+                                Análise
+                            </span>
+
+                        </div>
+
+                        <div class="card-conteudo">
+
+                            <span>
+                                Em análise
+                            </span>
+
+                            <strong>0</strong>
+
+                        </div>
+
+                        <div class="card-rodape">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                            Em processamento
+                        </div>
+
+                    </article>
+
+
+                    <!-- APROVADAS -->
+                    <article class="dashboard-card card-verde">
+
+                        <div class="card-topo">
+
+                            <div class="card-icone">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+
+                            <span class="card-status">
+                                Aprovadas
+                            </span>
+
+                        </div>
+
+                        <div class="card-conteudo">
+
+                            <span>
+                                Solicitações aprovadas
+                            </span>
+
+                            <strong>0</strong>
+
+                        </div>
+
+                        <div class="card-rodape">
+                            <i class="fa-solid fa-id-card"></i>
+                            Prontas para emissão
+                        </div>
+
+                    </article>
+
+
+                    <!-- REJEITADAS -->
+                    <article class="dashboard-card card-vermelho">
+
+                        <div class="card-topo">
+
+                            <div class="card-icone">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+
+                            <span class="card-status">
+                                Rejeitadas
+                            </span>
+
+                        </div>
+
+                        <div class="card-conteudo">
+
+                            <span>
+                                Solicitações rejeitadas
+                            </span>
+
+                            <strong>0</strong>
+
+                        </div>
+
+                        <div class="card-rodape">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            Não aprovadas
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =====================================
+                     SOLICITAÇÕES
+                ====================================== -->
+                <section
+                    class="solicitacoes-painel"
+                    id="solicitacoes"
+                >
+
+                    <div class="solicitacoes-topo">
+
+                        <div>
+
+                            <h3>
+                                Solicitações recentes
+                            </h3>
+
+                            <p>
+                                Consulte os pedidos enviados
+                                para análise.
+                            </p>
+
+                        </div>
+
+
+                        <div class="solicitacoes-acoes">
+
+                            <div class="busca-admin">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input
+                                    type="search"
+                                    id="buscaSolicitacao"
+                                    placeholder="Buscar por nome ou CPF..."
+                                >
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="btn-filtro-admin"
+                            >
+                                <i class="fa-solid fa-sliders"></i>
+                                Filtros
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FILTROS RÁPIDOS -->
+                    <div class="filtros-status">
+
+                        <button
+                            type="button"
+                            class="filtro-status ativo"
+                        >
+                            Todas
+
+                            <span>1</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="filtro-status"
+                        >
+                            Pendentes
+
+                            <span>1</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="filtro-status"
+                        >
+                            Em análise
+
+                            <span>0</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="filtro-status"
+                        >
+                            Aprovadas
+
+                            <span>0</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="filtro-status"
+                        >
+                            Rejeitadas
+
+                            <span>0</span>
+                        </button>
+
+                    </div>
+
+
+                    <!-- TABELA -->
+                    <div class="tabela-admin-container">
+
+                        <table class="tabela-admin">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Protocolo</th>
+                                    <th>Solicitante</th>
+                                    <th>CPF</th>
+                                    <th>Data</th>
+                                    <th>Status</th>
+                                    <th class="coluna-acao">
+                                        Ação
+                                    </th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr class="linha-solicitacao">
+
+                                    <td>
+
+                                        <div class="protocolo-admin">
+
+                                            <div class="protocolo-icone">
+                                                <i class="fa-solid fa-file-lines"></i>
+                                            </div>
+
+                                            <strong>#000001</strong>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="solicitante-admin">
+
+                                            <div class="solicitante-avatar">
+                                                MS
+                                            </div>
+
+                                            <div>
+                                                <strong>
+                                                    Maria da Silva
+                                                </strong>
+
+                                                <span>
+                                                    Nova solicitação
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        000.000.000-00
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="data-solicitacao">
+                                            <strong>24/09/2026</strong>
+                                            <span>08:30</span>
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status-admin pendente">
+                                            <i class="fa-solid fa-circle"></i>
+                                            Pendente
+                                        </span>
+
+                                    </td>
+
+
+                                    <td class="coluna-acao">
+
+                                        <a
+                                            href="analisar-solicitacao.html"
+                                            class="btn-analisar"
+                                        >
+                                            Analisar
+
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- RODAPÉ DA TABELA -->
+                    <div class="tabela-rodape">
+
+                        <span>
+                            Exibindo 1 solicitação
+                        </span>
+
+                        <div class="paginacao-admin">
+
+                            <button
+                                type="button"
+                                disabled
+                            >
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="pagina-ativa"
+                            >
+                                1
+                            </button>
+
+                            <button
+                                type="button"
+                                disabled
+                            >
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

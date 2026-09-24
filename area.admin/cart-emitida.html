@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carteirinha Emitida | Identifica+</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="admin-sidebar">
+
+            <div class="sidebar-marca">
+
+                <div class="sidebar-logo">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div>
+                    <h1>Identifica<span>+</span></h1>
+                    <p>Painel administrativo</p>
+                </div>
+
+            </div>
+
+            <div class="sidebar-divisor"></div>
+
+            <nav class="sidebar-menu">
+
+                <span class="sidebar-menu-titulo">
+                    GERENCIAMENTO
+                </span>
+
+                <a
+                    href="dashboard-admin.html"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Visão geral</span>
+                </a>
+
+                <a
+                    href="dashboard-admin.html#solicitacoes"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Solicitações</span>
+                </a>
+
+                <span class="sidebar-menu-titulo segundo">
+                    SISTEMA
+                </span>
+
+                <a
+                    href="#"
+                    class="sidebar-link ativo"
+                >
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>Carteirinhas</span>
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar-link"
+                >
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Histórico</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-rodape">
+
+                <div class="sidebar-seguranca">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <strong>Ambiente seguro</strong>
+                        <span>Área administrativa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ÁREA PRINCIPAL -->
+        <div class="admin-principal">
+
+            <!-- TOPBAR -->
+            <header class="admin-topbar">
+
+                <button
+                    type="button"
+                    class="btn-menu-mobile"
+                    id="btnMenuMobile"
+                    aria-label="Abrir menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="topbar-identificacao">
+                    <span>Painel administrativo</span>
+                    <strong>Carteirinha emitida</strong>
+                </div>
+
+                <div class="topbar-direita">
+
+                    <div class="topbar-usuario">
+
+                        <div class="usuario-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="usuario-info">
+                            <strong>Administrador</strong>
+                            <span>Usuário autorizado</span>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="login-admin.html"
+                        class="topbar-sair"
+                        title="Sair"
+                    >
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTEÚDO -->
+            <main class="emitida-conteudo">
+
+                <!-- SUCESSO -->
+                <section class="emitida-sucesso">
+
+                    <div class="emitida-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div class="emitida-sucesso-texto">
+
+                        <span>
+                            EMISSÃO CONCLUÍDA
+                        </span>
+
+                        <h2>
+                            Carteirinha emitida com sucesso!
+                        </h2>
+
+                        <p>
+                            A carteirinha digital foi preparada
+                            e já pode ser disponibilizada ao beneficiário.
+                        </p>
+
+                    </div>
+
+                    <span class="emitida-status">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Ativa
+                    </span>
+
+                </section>
+
+
+                <!-- RESUMO -->
+                <section class="emitida-resumo">
+
+                    <div class="emitida-resumo-item">
+
+                        <div class="resumo-icone azul">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+
+                        <div>
+                            <span>NÚMERO</span>
+                            <strong>ID-000001</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="emitida-resumo-item">
+
+                        <div class="resumo-icone verde">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+
+                        <div>
+                            <span>EMISSÃO</span>
+                            <strong>24/09/2026</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="emitida-resumo-item">
+
+                        <div class="resumo-icone roxo">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+
+                        <div>
+                            <span>VALIDADE</span>
+                            <strong>24/09/2031</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="emitida-resumo-item">
+
+                        <div class="resumo-icone amarelo">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <span>STATUS</span>
+                            <strong class="resumo-status-ativo">
+                                Ativa
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- GRID PRINCIPAL -->
+                <div class="emitida-grid">
+
+                    <!-- CARTEIRINHA -->
+                    <section class="emitida-painel">
+
+                        <div class="emitida-painel-titulo">
+
+                            <div>
+
+                                <span class="dashboard-etiqueta">
+                                    <i class="fa-solid fa-id-card"></i>
+                                    CARTEIRINHA DIGITAL
+                                </span>
+
+                                <h3>
+                                    Visualização da carteirinha
+                                </h3>
+
+                                <p>
+                                    Confira a frente e o verso
+                                    da identificação emitida.
+                                </p>
+
+                            </div>
+
+                            <span class="selo-ativa">
+                                <i class="fa-solid fa-circle"></i>
+                                ATIVA
+                            </span>
+
+                        </div>
+
+
+                        <div class="emitida-cartoes">
+
+                            <!-- FRENTE -->
+                            <div>
+
+                                <span class="lado-cartao">
+                                    Frente
+                                </span>
+
+                                <article class="carteirinha frente">
+
+                                    <div class="cart-decoracao cart-decoracao-1"></div>
+                                    <div class="cart-decoracao cart-decoracao-2"></div>
+
+                                    <div class="cart-topo">
+
+                                        <div class="cart-marca">
+
+                                            <div>
+                                                <i class="fa-solid fa-id-card"></i>
+                                            </div>
+
+                                            <span>
+                                                Identifica<strong>+</strong>
+                                            </span>
+
+                                        </div>
+
+                                        <span class="cart-digital">
+                                            DIGITAL
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="cart-tipo">
+                                        CARTEIRINHA DE IDENTIFICAÇÃO
+                                    </div>
+
+
+                                    <div class="cart-corpo">
+
+                                        <div class="cart-foto">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+
+                                        <div class="cart-dados">
+
+                                            <span>NOME</span>
+
+                                            <strong>
+                                                Maria da Silva
+                                            </strong>
+
+
+                                            <div class="cart-dados-linha">
+
+                                                <p>
+                                                    <span>CPF</span>
+
+                                                    <strong>
+                                                        000.000.000-00
+                                                    </strong>
+                                                </p>
+
+                                                <p>
+                                                    <span>NASCIMENTO</span>
+
+                                                    <strong>
+                                                        10/05/1990
+                                                    </strong>
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="cart-rodape">
+
+                                        <div>
+
+                                            <span>
+                                                Nº DA CARTEIRINHA
+                                            </span>
+
+                                            <strong>
+                                                ID-000001
+                                            </strong>
+
+                                        </div>
+
+                                        <i class="fa-solid fa-shield-halved"></i>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+
+                            <!-- VERSO -->
+                            <div>
+
+                                <span class="lado-cartao">
+                                    Verso
+                                </span>
+
+                                <article class="carteirinha verso">
+
+                                    <div class="verso-cabecalho">
+
+                                        <div class="cart-marca">
+
+                                            <div>
+                                                <i class="fa-solid fa-id-card"></i>
+                                            </div>
+
+                                            <span>
+                                                Identifica<strong>+</strong>
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="verso-conteudo">
+
+                                        <div class="verso-dados">
+
+                                            <div>
+                                                <span>EMISSÃO</span>
+                                                <strong>24/09/2026</strong>
+                                            </div>
+
+                                            <div>
+                                                <span>VALIDADE</span>
+                                                <strong>24/09/2031</strong>
+                                            </div>
+
+                                            <div class="verso-legal">
+                                                <span>
+                                                    REFERÊNCIA LEGAL
+                                                </span>
+
+                                                <strong>
+                                                    Conforme configuração
+                                                    do órgão emissor
+                                                </strong>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="cart-qr">
+
+                                            <i class="fa-solid fa-qrcode"></i>
+
+                                            <span>
+                                                VALIDAÇÃO
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="verso-aviso">
+
+                                        <i class="fa-solid fa-shield-halved"></i>
+
+                                        <span>
+                                            Verifique a autenticidade
+                                            através do QR Code.
+                                        </span>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- INFORMAÇÕES LATERAIS -->
+                    <aside class="emitida-lateral">
+
+                        <!-- BENEFICIÁRIO -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo compacto">
+
+                                <div class="analise-card-icone azul">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Beneficiário</h3>
+                                </div>
+
+                            </div>
+
+
+                            <div class="emitida-beneficiario">
+
+                                <div class="emitida-avatar">
+                                    MS
+                                </div>
+
+                                <div>
+                                    <strong>Maria da Silva</strong>
+                                    <span>000.000.000-00</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="emitida-info-lista">
+
+                                <div>
+                                    <span>Protocolo</span>
+                                    <strong>#000001</strong>
+                                </div>
+
+                                <div>
+                                    <span>Nascimento</span>
+                                    <strong>10/05/1990</strong>
+                                </div>
+
+                                <div>
+                                    <span>Carteirinha</span>
+                                    <strong>ID-000001</strong>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- VALIDAÇÃO -->
+                        <section class="analise-card">
+
+                            <div class="analise-card-titulo compacto">
+
+                                <div class="analise-card-icone verde">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Validação digital</h3>
+                                </div>
+
+                            </div>
+
+
+                            <div class="emitida-validacao">
+
+                                <div class="emitida-qr">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                </div>
+
+                                <strong>
+                                    QR Code de validação
+                                </strong>
+
+                                <p>
+                                    Permite consultar a autenticidade
+                                    da carteirinha digital.
+                                </p>
+
+                            </div>
+
+                        </section>
+
+                    </aside>
+
+                </div>
+
+
+                <!-- AÇÕES -->
+                <section class="emitida-acoes">
+
+                    <a
+                        href="dashboard-admin.html"
+                        class="btn-voltar-painel"
+                    >
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Voltar ao painel
+                    </a>
+
+
+                    <div>
+
+                        <button
+                            type="button"
+                            class="btn-ver-carteirinha"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                            Visualizar
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn-pdf"
+                        >
+                            <i class="fa-solid fa-file-pdf"></i>
+                            Gerar PDF
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

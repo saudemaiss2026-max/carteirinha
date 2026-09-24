@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acesso Administrativo | Identifica+</title>
+
+    <!-- CSS DA ÁREA ADMIN -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ÍCONES -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <!-- =========================================
+             LADO ESQUERDO
+        ========================================== -->
+        <section class="login-banner">
+
+            <div class="circulo circulo-1"></div>
+            <div class="circulo circulo-2"></div>
+
+            <!-- MARCA -->
+            <div class="login-marca">
+
+                <div class="logo-admin">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div>
+                    <h1>
+                        Identifica<span>+</span>
+                    </h1>
+
+                    <p>
+                        Identificação digital
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- CONTEÚDO -->
+            <div class="banner-conteudo">
+
+                <span class="banner-etiqueta">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Ambiente administrativo
+                </span>
+
+
+                <h2>
+                    Gestão simples,
+                    <span>segura e eficiente.</span>
+                </h2>
+
+
+                <p class="banner-descricao">
+                    Gerencie solicitações, analise documentos
+                    e acompanhe a emissão das carteirinhas
+                    digitais em um único ambiente.
+                </p>
+
+
+                <div class="banner-recursos">
+
+                    <div class="recurso-item">
+
+                        <div class="recurso-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <span>
+                            Gestão das solicitações
+                        </span>
+
+                    </div>
+
+
+                    <div class="recurso-item">
+
+                        <div class="recurso-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <span>
+                            Análise dos documentos
+                        </span>
+
+                    </div>
+
+
+                    <div class="recurso-item">
+
+                        <div class="recurso-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <span>
+                            Emissão das carteirinhas digitais
+                        </span>
+
+                    </div>
+
+
+                    <div class="recurso-item">
+
+                        <div class="recurso-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <span>
+                            Verificação por QR Code
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEGURANÇA -->
+            <div class="banner-seguranca">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <span>
+                    Acesso exclusivo para usuários autorizados
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LADO DIREITO
+        ========================================== -->
+        <section class="login-area">
+
+            <div class="login-box">
+
+                <!-- MARCA MOBILE -->
+                <div class="marca-mobile">
+
+                    <div class="logo-admin">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+
+                    <h1>
+                        Identifica<span>+</span>
+                    </h1>
+
+                </div>
+
+
+                <!-- ÍCONE -->
+                <div class="icone-acesso">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+
+
+                <span class="titulo-pequeno">
+                    ÁREA RESTRITA
+                </span>
+
+
+                <h2>
+                    Acesso administrativo
+                </h2>
+
+
+                <p class="login-descricao">
+                    Informe suas credenciais para acessar
+                    o painel de gerenciamento.
+                </p>
+
+
+                <!-- FORMULÁRIO -->
+                <form id="formLoginAdmin">
+
+                    <!-- E-MAIL -->
+                    <div class="campo-login">
+
+                        <label for="emailAdmin">
+                            E-mail
+                        </label>
+
+                        <div class="input-login">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="emailAdmin"
+                                name="email"
+                                placeholder="Digite seu e-mail"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SENHA -->
+                    <div class="campo-login">
+
+                        <label for="senhaAdmin">
+                            Senha
+                        </label>
+
+                        <div class="input-login">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="senhaAdmin"
+                                name="senha"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required
+                            >
+
+
+                            <button
+                                type="button"
+                                class="mostrar-senha"
+                                id="btnMostrarSenha"
+                                aria-label="Mostrar ou ocultar senha"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BOTÃO -->
+                    <button
+                        type="submit"
+                        class="btn-entrar"
+                    >
+
+                        <span>
+                            Entrar no painel
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- AVISO -->
+                <div class="aviso-seguranca">
+
+                    <div class="aviso-icone">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Ambiente protegido
+                        </strong>
+
+                        <p>
+                            O acesso é permitido somente
+                            para usuários autorizados.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SUPABASE -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- JS DA ÁREA ADMIN -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
